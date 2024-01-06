@@ -1,7 +1,7 @@
 /**
 * Template Name: MyResume
 * Updated: Nov 17 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+* Template URL: https://bootstrapmade.om/free-html-bootstrap-template-my-resume/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -268,3 +268,59 @@
   new PureCounter();
 
 })()
+
+// CONTACT FORM MESSAGE CODE
+
+contactForm = document.querySelector('.contact-form')
+const successMsg = document.querySelector('.sent-message');
+const errorMsg = document.querySelector('.error-message');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(contactForm);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  // result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              successMsg.classList.add('d-block')
+              successMsg.innerHTML = json.message;
+              setTimeout(function() {
+                successMsg.classList.remove('d-block')
+                errorMsg.innerHTML = ''
+              }, 5000);
+
+              // errorMsg.classList.remove('d-block')
+            } else {
+                console.log(response);
+                errorMsg.classList.add('d-block')
+                errorMsg.innerHTML = json.message;
+                setTimeout(function() {
+                  errorMsg.classList.remove('d-block')
+                  errorMsg.innerHTML = ''
+                }, 5000)
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            errorMsg.classList.add('d-block')
+            errorMsg.innerHTML += "\n Something went wrong!";
+        })
+        .then(function() {
+            contactForm.reset();
+            setTimeout(() => {
+              errorMsg.style.display = "none";
+            }, 3000);
+        });
+
+})
