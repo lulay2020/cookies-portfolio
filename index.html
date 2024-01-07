@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kolthoum Portfolio</title>
+  <title>Kulthoum Coulibaly Portfolio</title>
   <meta content="Professional Photographer and Video Editor" name="description">
   <meta content="video editing, photography, portfolio" name="keywords">
 
@@ -52,12 +52,34 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <!-- <source src="assets/media/hero-vid.mov" type="video/mp4"> -->
-      <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4">
+    <!-- <video class="hero-vid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy"> -->
+      <!-- <source src="assets/media/hero-vid.mp4" type="video/mp4"> -->
+      <!-- <source src="assets/media/hero-vid-desktop.mp4" type="video/mp4" media="(min-width: 880px)"> -->
+      <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+
+      <!-- Source for screens wider than 880px -->
+      <!-- <source src="assets/media/hero-vid-desktop.mp4" type="video/mp4" media="(min-width: 881px)"> -->
+      
+      <!-- Default source for screens 880px and below -->
+      <!-- <source src="assets/media/hero-vid.mp4" type="video/mp4" media="(max-width: 880px)"> -->
+
+      <!-- Fallback content in case the browser doesn't support the video tag -->
+      <!-- Your browser does not support the video tag. -->
+    <!-- </video> -->
+
+    <video class="hero-vid" autoplay muted loop loading="lazy">
+      <!-- Source for screens wider than 880px -->
+      <!-- <source type="video/mp4" src="assets/media/hero-vid.mp4">
+      
+      Default source for screens 880px and below -->
+      <!-- <source type="video/mp4"> -->
+    
+      <!-- Fallback content in case the browser doesn't support the video tag -->
+      Your browser does not support the video tag.
     </video>
+    
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h1>Kolthoum</h1>
+      <h1>Kulthoum Coulibaly</h1>
       <p>I'm <span class="typed" data-typed-items="Photographer, Video Editor"></span></p>
       <div class="social-links">
         <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
@@ -315,141 +337,537 @@
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Drinks</li>
-              <li data-filter=".filter-card">Food</li>
-              <li data-filter=".filter-web">Products</li>
+              <li data-filter=".filter-drinks">Drinks</li>
+              <li data-filter=".filter-food">Food</li>
+              <li data-filter=".filter-products">Products</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/products/p-7-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>Products 20</h4>
+                <!-- <p>Web</p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/products/p-7-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 20"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drinks">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/drinks/p-1-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Drinks 1</h4>
+                <!-- <p></p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/drinks/p-1-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Drinks"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details-p-1.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drinks">
+            
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <!-- <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""> -->
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/drinks/v-2.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
+                <h4>Drinks 2</h4>
+                <!-- <p></p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/drinks/v-2.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Drinks 2"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/products/p-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
+                <h4>Products 1</h4>
+                <!-- <p>Web</p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/products/p-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 1"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/products/p-7-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
+                <h4>Products 21</h4>
+                <!-- <p>Web</p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/products/p-7-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 21"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drinks">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/drinks/v-3.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
+                <h4>Drinks 3</h4>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/drinks/v-3.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Drinks 3">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-12.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
+                <h4>Products 13</h4>
+                <!-- <p>Web</p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/products/v-12.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 13"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-8-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 22</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-8-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 22"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/products/p-2-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
+                <h4>Products 2</h4>
+                <!-- <p>Web</p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/products/p-2-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 2">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-2-3.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Products 14</h4>
+                <!-- <p>Web</p> -->
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/products/v-2-3.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 14"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drinks">
+            <div class="portfolio-wrap">
+              <img src="assets/img/drinks/p-1-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Drinks 4</h4>
+                <!-- <p>Card</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/drinks/p-1-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Drinks 4"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-drinks">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/drinks/v-1-3.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Drinks 5</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/drinks/v-1-3.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Drinks 5"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-2-4.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Products 15</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/v-2-4.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 15"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-2-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 3</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-2-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 3"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 4</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 4"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-3-2.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Products 16</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/v-3-2.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 16"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <img src="assets/img/food/p-1-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Food 1</h4>
+                <!-- <p>App</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/food/p-1-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food 1"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-7-2.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Products 17</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/v-7-2.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 17"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-8-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 23</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-8-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 23"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-11.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 5</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 5"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/food/v-3.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Food 2</h4>
+                <!-- <p>Card</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/food/v-3.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food 2">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-3-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 6</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-3-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 6"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-7-3.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Products 18</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/v-7-3.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 18"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <img src="assets/img/food/p-1-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Food 3</h4>
+                <!-- <p>Card</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/food/p-1-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food 3">
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-4-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 7</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-4-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 7"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/products/v-9.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Products 19</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/v-9.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 19"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <img src="assets/img/food/p-2-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Food 4</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/food/p-2-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food 4"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-4-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 8</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-4-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 8"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <video autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="img-fluid">
+                <source src="assets/img/food/v-4.mp4" type="video/mp4">
+                <!-- <source src="https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid.MOV?raw=true" type="video/mp4"> -->
+              </video>
+              <div class="portfolio-info">
+                <h4>Food 6</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/food/v-4.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food 6"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-5-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 9</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-5-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 9"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+            <div class="portfolio-wrap">
+              <img src="assets/img/food/p-2-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Food 5</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/food/p-2-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food 5"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-5-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 10</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-5-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 10"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-6-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 11</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-6-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 11"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-products">
+            <div class="portfolio-wrap">
+              <img src="assets/img/products/p-6-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Products 12</h4>
+                <!-- <p>Web</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/products/p-6-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Products 12"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -671,7 +1089,7 @@
             <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form contact-form">
               <div class="row">
                 <input type="hidden" name="access_key" value="385f3d24-ab2d-4378-b112-4aeeb870233f">
-                <input type="hidden" name="from_name" value="From Kolthoum Portfolio">
+                <input type="hidden" name="from_name" value="From Kulthoum Coulibaly Portfolio">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
@@ -707,7 +1125,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Kolthoum</h3>
+      <h3>Kulthoum Coulibaly</h3>
       <p>
         A Professional Photographer and Video Editor 
       </p>
@@ -719,7 +1137,7 @@
         <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Kolthoum</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Kulthoum Coulibaly</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -743,13 +1161,25 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> 
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var video = document.querySelector('.hero-vid');
+  
+    if (window.innerWidth > 880) {
+      // html = `<source src='assets/media/hero-vid-desktop.mp4' type='video/mp4' >`
+      document.querySelector(".hero-vid source").setAttribute('src', 'assets/media/hero-vid-desktop.mp4');
+      
+      // video.append(html);
+    } else {
+      video.append("<source src='assets/media/hero-vid.mp4' type='video/mp4' >");
+    }
+  </script>
 
 </body>
 

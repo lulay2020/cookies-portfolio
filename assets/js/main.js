@@ -324,3 +324,23 @@ contactForm.addEventListener('submit', (e) => {
         });
 
 })
+
+
+// DETERMINE SCREEN SIZE AND SET VIDEO ACCORDINGLY
+
+var video = document.querySelector('.hero-vid');
+let source = document.createElement('source');
+  
+if (window.innerWidth > 880) {
+  setSource('assets/media/hero-vid-desktop.mp4')
+
+} else {
+  setSource('assets/media/hero-vid.mp4')
+}
+
+function setSource(src){
+  source.src = src;
+  source.type = 'video/mp4';
+  video.appendChild(source);
+}
+

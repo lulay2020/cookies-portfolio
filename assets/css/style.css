@@ -209,8 +209,12 @@ h6 {
     display: none;
     color: var(--dark-color);
   }
+  
 }
 
+.nav-menu a span {
+  color: var(--dark-color);
+}
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
@@ -284,10 +288,10 @@ h6 {
   position: relative;
 }
 
-video {
-  /* width: 100vw; */
+.hero-vid {
+  width: 100vw;
   height: 100vh;
-  object-fit: scale-down;
+  object-fit: cover;
   position: absolute;
   /* left: 0; */
   right: 0;
@@ -359,7 +363,7 @@ video {
     text-align: center;
   }
 
-  video {
+  .hero-vid {
     width: 100vw;
     object-fit: cover;
     object-position: top;
@@ -643,7 +647,6 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
 }
 
 .portfolio .portfolio-wrap::before {
