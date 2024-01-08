@@ -2,7 +2,13 @@
   --dark-color: #1c1c1c;
   --light-color: #f4f4f4;
   --main-color: #D66322;
-}/**
+}
+
+@font-face {
+  font-display: swap;
+}
+
+/**
 * Template Name: MyResume
 * Updated: Nov 17 2023 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
