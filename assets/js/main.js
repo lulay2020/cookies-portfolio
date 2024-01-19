@@ -330,7 +330,6 @@ contactForm.addEventListener('submit', (e) => {
 
 var video = document.querySelector('.hero-vid');
 let source = document.createElement('source');
-let sourceTwo
   
 if (window.innerWidth > 880) {
   setSource('https://github.com/lulay2020/cookies-portfolio/blob/main/assets/media/hero-vid-desktop.mp4?raw=true')
