@@ -478,6 +478,9 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  width: 100%;
+  display: block;
+  background-color: #11dbcf;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -590,8 +593,15 @@ section {
 }
 
 .portfolio .portfolio-wrap img {
+  min-width: 300px;
   width: 100%;
+  height: auto;
 }
+
+/* .portfolio .portfolio-wrap picture {
+  display: block;
+  width: 100%;
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
